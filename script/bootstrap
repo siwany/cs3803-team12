@@ -2,5 +2,9 @@
 
 set -e
 
-gem install bundler
-bundle install
+export GEM_HOME="$HOME/.gem/ruby/2.6.0"
+export GEM_PATH="$GEM_HOME:/Library/Ruby/Gems/2.6.0"
+export PATH="$GEM_HOME/bin:$PATH"
+
+gem install --user-install bundler -v 2.4.22
+bundle _2.4.22_ install

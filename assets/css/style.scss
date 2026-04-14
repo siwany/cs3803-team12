@@ -2,3 +2,45 @@
 ---
 
 @import 'jekyll-theme-cayman';
+
+.main-content h2,
+.main-content h3 {
+	margin-top: 2rem;
+}
+
+.main-content p {
+	margin-bottom: 1rem;
+}
+
+.report-figure {
+	margin: 1.25rem 0 1.75rem;
+	padding: 0.75rem;
+	border: 1px solid #d9e7ea;
+	border-radius: 8px;
+	background: #fbfefe;
+}
+
+.report-figure img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.report-figure figcaption {
+	margin-top: 0.7rem;
+	font-size: 0.95rem;
+	color: #4a5f6b;
+}
+
+.comparison-grid {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	margin-bottom: 1.2rem;
+}
+
+@media (max-width: 900px) {
+	.comparison-grid {
+		grid-template-columns: 1fr;
+	}
+}
